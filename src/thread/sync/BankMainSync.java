@@ -3,10 +3,10 @@ package thread.sync;
 import static thread.util.MyLogger.log;
 import static thread.util.ThreadUtils.sleep;
 
-public class BankMain {
+public class BankMainSync {
 
     public static void main(String[] args) throws InterruptedException {
-        BankAccount account = new MyBankAccount(1000);
+        BankAccount account = new BankAccountSync(1000);
 
         Thread t1 = new Thread(new WithdrawTask(account, 800), "t1");
         Thread t2 = new Thread(new WithdrawTask(account, 800), "t2");

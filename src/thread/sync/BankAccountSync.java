@@ -3,11 +3,11 @@ package thread.sync;
 import static thread.util.MyLogger.log;
 import static thread.util.ThreadUtils.sleep;
 
-public class MyBankAccount implements BankAccount {
+public class BankAccountSync implements BankAccount {
 
     private int balance;
 
-    public MyBankAccount(int initialBalance) {
+    public BankAccountSync(int initialBalance) {
         this.balance = initialBalance;
     }
 
